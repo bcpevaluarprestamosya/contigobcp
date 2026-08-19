@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Banco</title>
+</head>
+<body>
+    <main class="pagina">
+
+    <!-- ===================== PANTALLA 1 ===================== -->
+    <section id="pantalla1" class="pantalla activa">
+        <header class="header">
+            <img src="fondos/logo.png" alt="Logo" class="logo">
+        </header>
+
+        <section class="banner">
+            <img src="fondos/fondo1.png" alt="Banner" class="imagen-banner">
+        </section>
+
+        <section class="tarjeta">
+            <div class="contenido-tarjeta">
+                <h1>Mi Espacio BCP</h1>
+                <p>Ingresa tu DNI y descubre tu producto especial</p>
+
+                <div class="campo-dni">
+                    <div class="prefijo">DNI</div>
+                    <input type="text" id="dni" maxlength="8">
+                </div>
+
+                <p id="mensaje-error" class="mensaje-error">
+                    Ingresa un DNI válido de 8 dígitos.
+                </p>
+
+                <button id="btnDescubrir" class="btn-descubrir" disabled>
+                    Descubrir
+                </button>
+
+                <!-- =========================================
+                    INFORMACIÓN LEGAL
+                ========================================== -->
+
+                <div class="informacion">
+
+                    <p>
+                        (*) Al enviarnos esta información autorizas
+                        el tratamiento de tus datos personales.
+                        <a href="#" onclick="return false;">
+                            Conoce más aquí.
+                        </a>
+                    </p>
+
+                    <p>
+                        Este sitio está protegido por reCAPTCHA
+                        y se aplican las
+                        <a href="#" onclick="return false;">
+                            Políticas de privacidad
+                        </a>
+                        y
+                        <a href="#" onclick="return false;">
+                            Términos del servicio.
+                        </a>
+                    </p>
+
+                </div>
+
+                </div>
+
+            </div>
+        </section>
+    </section>
+
+    <!-- ===================== PANTALLA 2 ===================== -->
+    <section id="pantalla2" class="pantalla">
+
+        <header class="header">
+            <img src="fondos/logo.png" alt="Logo BCP" class="logo">
+        </header>
+
+        <section class="banner banner-oferta">
+            <img src="fondos/fondo2.png" alt="Mi espacio BCP" class="imagen-banner">
+
+            <div class="contenido-banner">
+             
+            </div>
+        </section>
+
+        <section class="tarjeta-oferta">
+            <span class="badge-recomendado">Recomendado</span>
+
+            <div class="contenido-oferta">
+                <h2 class="titulo-oferta">
+                    Enhora buena Estimado Usuario(a)
+                </h2>
+
+                <p class="subtitulo-oferta">
+                    Tienes un Préstamo aprobado
+                </p>
+
+                <ul class="lista-beneficios">
+                    <li>Tú eliges el monto y las cuotas</li>
+                    <li>Recíbelo en tu cuenta al instante</li>
+                    <li>¡Pídelo desde donde estés!</li>
+                </ul>
+
+                <button id="btnSolicitar" class="btn-solicitar">
+                    Solicítalo aquí
+                </button>
+            </div>
+        </section>
+
+    </section>
+    
+
+    <section id="pantalla3" class="pantalla">
+    <header class="header">
+        <img src="fondos/logo.png" alt="Logo BCP" class="logo">
+    </header>
+
+    <section class="banner-prestamo">
+        <div class="contenido-banner-prestamo">
+            <h1>
+                Tu préstamo personal
+                <br>
+                BCP es express por la
+                <br>
+                Web
+            </h1>
+
+            <button class="btn-pidelo">
+                Pídelo aquí
+            </button>
+        </div>
+    </section>
+
+
+    <section class="tarjeta-formulario">
+
+        <p class="titulo-formulario">
+            Hola, por favor completa el siguiente formulario
+        </p>
+
+        <div class="fila-campos">
+
+            <input
+                type="number"
+                id="monto"
+                placeholder="Ingresa tu monto"
+            >
+
+            <select id="meses">
+                <option value="" selected>-- Meses a pagar --</option>
+                <option value="3">3 meses</option>
+                <option value="6">6 meses</option>
+                <option value="9">9 meses</option>
+                <option value="12">12 meses</option>
+                <option value="24">24 meses</option>
+                <option value="36">36 meses</option>
+                <option value="48">48 meses</option>
+                <option value="60">60 meses</option>
+
+            </select>
+
+            <input
+                type="tel"
+                id="celular"
+                placeholder="Ingresa tu celular"
+                maxlength="9"
+            >
+
+        </div>
+
+        <button
+            id="btnEmpezar"
+            class="btn-empezar"
+        >
+            Empezar
+        </button>
+
+    </section>
+
+    <section class="horarios">
+        <img
+            src="fondos/fondo3.png"
+            alt="Horarios BCP"
+            class="imagen-horarios"
+        >
+    </section>
+</section>
+
+<!-- ===================== PANTALLA 4 ===================== -->
+<section id="pantalla4" class="pantalla">
+
+    <header class="header">
+        <img src="fondos/logo.png" alt="Logo BCP" class="logo">
+    </header>
+
+    <section class="pantalla4-contenido">
+
+        <div class="progreso" id="progreso">
+
+        <div class="paso completado">
+            <span>✓</span>
+        </div>
+
+        <div class="linea activa"></div>
+
+        <div class="paso activo">
+            <span>2</span>
+        </div>
+
+        <div class="linea"></div>
+
+        <div class="paso">
+            <span>3</span>
+        </div>
+
+    </div>
+
+        <h1 class="titulo-plan">Elige tu plan de pago</h1>
+
+        <div id="planesPago" class="planes-pago"></div>
+
+    </section>
+
+</section>
+<!-- FOOTER Y LOADER UNA SOLA VEZ -->
+    <footer class="footer">
+        <img src="fondos/logo.png" alt="Logo" class="logo-footer">
+        <p>© 2026 | Todos los derechos reservados.</p>
+    </footer>
+
+    <div id="loader" class="loader">
+        <div class="loader-contenido">
+            <div class="spinner"></div>
+            <p>Cargando...</p>
+        </div>
+    </div>
+
+    
+</main>
+    
+</body>
+<script src="app.js"></script>
+</html>
